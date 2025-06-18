@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Card</title>
+    <link rel="stylesheet" href="report.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="a">
+        <div id="b">
+            <h4 style="color: white; margin-left: 550px;" id="demo"></h4>
+            <p id="intname" style="color: white; margin-left: 50px; margin-top: -40px; ">
+                </p>        
+            <img src="img/logo3.png"  id="logo" alt="logo" title="School Logo">
+            <h2 style="color: white; text-align: center; margin-top: -20px;">Top Hat Group of Schools, Akure</h2>
+            
+            <p style="color: white; text-align: center; font-weight: bolder; margin-top: -20px;">STUDENT's INFORMATION</p>
+        <form id="form" method="get">
+            <input type="text" name="fullname" class="qw" oninput="dex()" placeholder="Student's fullname" id="fullname">
+            <select name="klass" class="qwert" id="klass" onchange="dex()">
+                <option value="">-Select Class-</option>
+                <option value="JSS1">JSS1</option>
+                <option value="JSS2">JSS2</option>
+                <option value="JSS3">JSS3</option>
+                <option value="SSS1">SSS1</option>
+                <option value="SSS2">SSS2</option>
+                <option value="SSS3">SSS3</option>
+            </select>
+            <label for="" style="color: white;">DOB</label>
+            <input type="date" name="dob" id="dob" onchange="dex()">
+            <br><br>
+            <input type="text" oninput="dex()" class="qw12" name="remark" id="remark" placeholder="Teacher's remark">
+            <!-- <textarea name="remark" id="remark" placeholder="Teacher's remark"></textarea> -->
+            <input type="number" oninput="dex()" class="bod31" name="attendance" placeholder="Attendance(MAX=90)" id="attendance" max="90">
+            <select name="genderr1" id="genderr1" class="qwertw"
+            onchange="dex()">
+                <option value="">-Gender-</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            
+            <br><br>
+            <select onchange="dex()" name="subject11" class="qwer" id="subject11">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test11" placeholder="First Test" id="test11">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test21" placeholder="Second Test" id="test21">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam11" placeholder="Examination Score" id="exam11">
+            <input type="number" oninput="dex()" class="qwe" name="total11" placeholder="Total Score" readonly id="total11">
+
+            <br><br>
+            <select onchange="dex()" name="subject12" class="qwer" id="subject12">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test12" placeholder="First Test" id="test12">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test22" placeholder="Second Test" id="test22">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam12" placeholder="Examination Score" id="exam12">
+            <input type="number" oninput="dex()" class="qwe" name="total12" placeholder="Total Score" readonly id="total12">
+
+            <br><br>
+            <select onchange="dex()" name="subject13" class="qwer" id="subject13">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test13" placeholder="First Test" id="test13">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test23" placeholder="Second Test" id="test23">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam13" placeholder="Examination Score" id="exam13">
+            <input type="number" oninput="dex()" class="qwe" name="total13" placeholder="Total Score" readonly id="total13">
+
+            <br><br>
+            <select onchange="dex()" name="subject14" class="qwer" id="subject14">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test14" placeholder="First Test" id="test14">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test24" placeholder="Second Test" id="test24">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam14" placeholder="Examination Score" id="exam14">
+            <input type="number" oninput="dex()" class="qwe" name="total14" placeholder="Total Score" readonly id="total14">
+
+            <br><br>
+            <select onchange="dex()" name="subject15" class="qwer" id="subject15">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test15" placeholder="First Test" id="test15">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test25" placeholder="Second Test" id="test25">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam15" placeholder="Examination Score" id="exam15">
+            <input type="number" oninput="dex()" class="qwe" name="total15" placeholder="Total Score" readonly id="total15">
+
+            <br><br>
+            <select onchange="dex()" name="subject16" class="qwer" id="subject16">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test16" placeholder="First Test" id="test16">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test26" placeholder="Second Test" id="test26">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam16" placeholder="Examination Score" id="exam16">
+            <input type="number" oninput="dex()" class="qwe" name="total16" placeholder="Total Score" readonly id="total16">
+            
+            <br><br>
+            <select onchange="dex()" name="subject17" class="qwer" id="subject17">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test17" placeholder="First Test" id="test17">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test27" placeholder="Second Test" id="test27">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam17" placeholder="Examination Score" id="exam17">
+            <input type="number" oninput="dex()" class="qwe" name="total17" placeholder="Total Score" readonly id="total17">
+
+            <br><br>
+            <select onchange="dex()" name="subject18" class="qwer" id="subject18">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test18" placeholder="First Test" id="test18">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test28" placeholder="Second Test" id="test28">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam18" placeholder="Examination Score" id="exam18">
+            <input type="number" oninput="dex()" class="qwe" name="total18" placeholder="Total Score" readonly id="total18">
+
+            <br><br>
+            <select onchange="dex()" name="subject19" class="qwer" id="subject19">
+                <option value="">-Select Subject-</option>
+                <option value="ENGLISH">ENGLISH</option>
+                <option value="MATHEMATICS">MATHEMATICS</option>
+                <option value="BIOLOGY">BIOLOGY</option>
+                <option value="PHYSICS">PHYSICS</option>
+                <option value="CHEMISTRY">CHEMISTRY</option>
+                <option value="ECONOMICS">ECONOMICS</option>
+                <option value="AGRIC SCIENCE">AGRIC SCIENCE</option>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <option value="FURTHER MATHEMATICS">FURTHER MATHEMATICS</option>
+            </select>         
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test19" placeholder="First Test" id="test19">
+            <input type="number" oninput="dex()" max="20" class="qwe" name="test29" placeholder="Second Test" id="test29">
+            <input type="number" oninput="dex()" max="60" class="qwe" name="exam19" placeholder="Examination Score" id="exam19">
+            <input type="number" oninput="dex()" class="qwe" name="total19" placeholder="Total Score" readonly id="total19">
+
+            <br><br>
+
+            <!-- <input type="button" value="Submit" id="submit" onclick="dex()"> -->
+
+        </form>            
+
+        </div>
+        <div id="printableArea">
+            <br>
+            <img src="img/logo33.png" id="logo" alt="logo" title="School Logo">
+            <h2 style="color: black; text-align: center; margin-top: -10px;">Top Hat Group of Schools, Akure</h2>
+
+            
+            <form method="post" id="form">
+                <label>Teacher's name</label>
+                <input type="text" name="teachers" class="qwy" id="teachers" readonly>    
+
+                <label>Teacher's Remark</label>
+                <input type="text" name="teachersr" class="qwyq" id="teachersr" readonly>    
+
+                <br><br>
+
+                <label>Student's name</label>
+                <input type="text" name="students" class="qwy" id="students" readonly> 
+            
+                <label>Student's Class</label>
+                <input type="text" name="studentsclass" class="qwy1" id="studentsclass" readonly> 
+
+                <label>Student's Gender</label>
+                <input type="text" name="genderr" class="qwy1q" id="genderr" readonly>
+
+                <br><br>
+                
+                <label>Student's Attendance</label>
+                <input type="text" name="attendance2" class="qwy11" id="attendance2" readonly> 
+
+                <label>Student's Age</label>
+                <input type="text" name="aged" class="qwy112" id="aged" readonly> 
+
+                <br><br>                
+
+                <table border="2" id="table" cellpadding="0" cellspacing="0">
+                    <tr class="bod2">
+                        <th>Subject</th>
+                        <th>Total</th>
+                        <th>Grade</th>
+                        <th>Remark</th>
+                    </tr>
+
+                    <tr>
+                        <td><input class="bod" type="text" name="subject" id="subject1" readonly></td>
+                        <td><input type="text" name="mark1" id="mark1" class="bod" readonly></td>
+                        <td><input type="text" name="grade1" id="grade1" class="bod" readonly></td>
+                        <td><input type="text" name="remark1" id="remark1" class="bod" readonly></td>
+                    </tr>
+
+                    <tr>
+                    <td><input class="bod" type="text" name="subject" id="subject2" readonly></td>
+                    <td><input type="text" name="mark2" id="mark2" class="bod" readonly></td>
+                    <td><input type="text" name="grade2" id="grade2" class="bod" readonly></td>
+                    <td><input type="text" name="remark2" id="remark2" class="bod" readonly></td>
+                    </tr>
+
+                    <tr>
+                    <td><input class="bod" type="text" name="subject" id="subject3" readonly></td>
+                    <td><input type="text" name="mark3" id="mark3" class="bod" readonly></td>
+                    <td><input type="text" name="grade3" id="grade3" class="bod" readonly></td>
+                    <td><input type="text" name="remark3" id="remark3" class="bod" readonly></td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="bod" type="text" name="subject" id="subject4" readonly></td>
+                        <td><input type="text" name="mark4" id="mark4" class="bod" readonly></td>
+                        <td><input type="text" name="grade4" id="grade4" class="bod" readonly></td>
+                        <td><input type="text" name="remark4" id="remark4" class="bod" readonly></td> 
+                    </tr>
+
+                    <tr>
+                        <td><input class="bod" type="text" name="subject" id="subject5" readonly></td>
+                        <td><input type="text" name="mark5" id="mark5" class="bod" readonly></td>
+                        <td><input type="text" name="grade5" id="grade5" class="bod" readonly></td>
+                        <td><input type="text" name="remark5" id="remark5" class="bod" readonly></td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="bod" type="text" name="subject" id="subject6" readonly></td>
+                        <td><input type="text" name="mark6" id="mark6" class="bod" readonly></td>
+                        <td><input type="text" name="grade6" id="grade6" class="bod" readonly></td>
+                        <td><input type="text" name="remark6" id="remark6" class="bod" readonly></td>
+                     </tr>
+
+                     <tr>
+                        <td><input class="bod" type="text" name="subject17" id="subject7" readonly></td>
+                        <td><input type="text" name="mark7" id="mark7" class="bod" readonly></td>
+                        <td><input type="text" name="grade7" id="grade7" class="bod" readonly></td>
+                        <td><input type="text" name="remark7" id="remark7" class="bod" readonly></td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="bod" type="text" name="subject8" id="subject8" readonly></td>
+                        <td><input type="text" name="mark8" id="mark8" class="bod" readonly></td>
+                        <td><input type="text" name="grade8" id="grade8" class="bod" readonly></td>
+                        <td><input type="text" name="remark8" id="remark8" class="bod" readonly></td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="bod" type="text" name="subject9" id="subject9" readonly></td>
+                        <td><input type="text" name="mark9" id="mark9" class="bod" readonly></td>
+                        <td><input type="text" name="grade9" id="grade9" class="bod" readonly></td>
+                        <td><input type="text" name="remark9" id="remark9" class="bod" readonly></td>
+                    </tr>
+                </table><br>
+
+                <!-- <input type="submit" value="Print Result" name="submit" onclick="printSpecificarea()"> -->
+<!-- 
+                <button type="button" value="Print Result" id="print" name="submit" onclick="printSpecificArea()">Print Result</button> -->
+
+
+            </form>
+           </div>
+    </div>
+
+    <script type="text/javascript">
+        let today = new Date();
+let hour = today.getHours();
+let maybe = setInterval(mytimer, 1000);
+
+function mytimer() {
+  let today = new Date();
+  document.getElementById("demo").innerHTML = today.toLocaleTimeString();
+}
+
+let intname = prompt("Enter your fullname");
+
+if (hour >= 0 && hour < 12) {
+  document.getElementById("intname").innerHTML = 'Good morning ' + intname + ', you are welcome.';
+} else if (hour >= 12 && hour < 16) {
+  document.getElementById("intname").innerHTML = 'Good afternoon ' + intname + ', you are welcome.';
+} else if (hour >= 16 && hour < 22) {
+  document.getElementById("intname").innerHTML = 'Good evening ' + intname + ', you are welcome.';
+} else {
+  document.getElementById("intname").innerHTML = 'Good night ' + intname + ', you are welcome.';
+}
+
+        // document.getElementById("intname").innerHTML = "Welcome " + intname;
+
+
+        let teachers = document.getElementById("teachers").value = intname;
+
+        // document.getElementById('submit').addEventListener('click', function printSpecificArea(){
+        //     printSpecificArea.preventDefault();
+        function printSpecificArea(){
+       
+    }
+
+       
+
+        function dex(){     
+            
+      let today = new Date();
+      let dob = new Date(document.getElementById('dob').value);
+      let age = today.getFullYear() - dob.getFullYear();
+      let months = today.getMonth() - dob.getMonth();
+      if (months < 0 || (months === 0 && today.getDate() < dob.getDate())) {
+        age--;
+      }
+      document.getElementById('aged').value = age + " years old";
+
+            let fullname = document.getElementById("fullname").value;
+            let students = document.getElementById("students").value = fullname;
+
+            let klass = document.getElementById("klass").value;
+            let studentsclass = document.getElementById("studentsclass").value = klass;
+
+            let attendance = document.getElementById("attendance").value;
+            let attendance2 = document.getElementById("attendance2").value = attendance + " / 90 Days";
+
+            let genderr1 = document.getElementById("genderr1").value;
+            let genderr = document.getElementById("genderr").value = genderr1;
+
+            let remark = document.getElementById("remark").value;
+            let teachersr = document.getElementById("teachersr").value = remark;
+
+            let subject11 = document.getElementById("subject11").value;
+            let subject1 = document.getElementById("subject1").value = subject11;
+
+            let subject12 = document.getElementById("subject12").value;
+            let subject2 = document.getElementById("subject2").value = subject12;
+
+            let subject13 = document.getElementById("subject13").value;
+            let subject3 = document.getElementById("subject3").value = subject13;
+
+            let subject14 = document.getElementById("subject14").value;
+            let subject4 = document.getElementById("subject4").value = subject14;
+
+            let subject15 = document.getElementById("subject15").value;
+            let subject5 = document.getElementById("subject5").value = subject15;
+
+            let subject16 = document.getElementById("subject16").value;
+            let subject6 = document.getElementById("subject6").value = subject16;
+
+            let subject17 = document.getElementById("subject17").value;
+            let subject7 = document.getElementById("subject7").value = subject17;
+
+            let subject18 = document.getElementById("subject18").value;
+            let subject8 = document.getElementById("subject8").value = subject18;
+
+            let subject19 = document.getElementById("subject19").value;
+            let subject9 = document.getElementById("subject9").value = subject19;
+
+                let test11= document.getElementById("test11").value;
+                let test21= document.getElementById("test21").value;
+                let exam11= document.getElementById("exam11").value;
+                let total11=  Number(test11) + Number(test21) + Number(exam11);
+                document.getElementById("total11").value = total11;
+                document.getElementById("mark1").value = total11;
+                
+                let test12= document.getElementById("test12").value;
+                let test22= document.getElementById("test22").value;
+                let exam12= document.getElementById("exam12").value;
+                let total12=  Number(test12) + Number(test22) + Number(exam12);
+                document.getElementById("total12").value = total12;
+                document.getElementById("mark2").value = total12;
+
+                let test13= document.getElementById("test13").value;
+                let test23= document.getElementById("test23").value;
+                let exam13= document.getElementById("exam13").value;
+                let total13=  Number(test13) + Number(test23) + Number(exam13);
+                document.getElementById("total13").value = total13;
+                document.getElementById("mark3").value = total13;
+                
+                let test14= document.getElementById("test14").value;
+                let test24= document.getElementById("test24").value;
+                let exam14= document.getElementById("exam14").value;
+                let total14=  Number(test14) + Number(test24) + Number(exam14);
+                document.getElementById("total14").value = total14;
+                document.getElementById("mark4").value = total14;
+                
+                let test15= document.getElementById("test15").value;
+                let test25= document.getElementById("test25").value;
+                let exam15= document.getElementById("exam15").value;
+                let total15=  Number(test15) + Number(test25) + Number(exam15);
+                document.getElementById("total15").value = total15;
+                document.getElementById("mark5").value = total15;
+
+                let test16= document.getElementById("test16").value;
+                let test26= document.getElementById("test26").value;
+                let exam16= document.getElementById("exam16").value;
+                let total16=  Number(test16) + Number(test26) + Number(exam16);
+                document.getElementById("total16").value = total16;
+                document.getElementById("mark6").value = total16;
+
+                let test17= document.getElementById("test17").value;
+                let test27= document.getElementById("test27").value;
+                let exam17= document.getElementById("exam17").value;
+                let total17=  Number(test17) + Number(test27) + Number(exam17);
+                document.getElementById("total17").value = total17;
+                document.getElementById("mark7").value = total17;
+
+                let test18= document.getElementById("test18").value;
+                let test28= document.getElementById("test28").value;
+                let exam18= document.getElementById("exam18").value;
+                let total18=  Number(test18) + Number(test28) + Number(exam18);
+                document.getElementById("total18").value = total18;
+                document.getElementById("mark8").value = total18;
+
+                let test19= document.getElementById("test19").value;
+                let test29= document.getElementById("test29").value;
+                let exam19= document.getElementById("exam19").value;
+                let total19=  Number(test19) + Number(test29) + Number(exam19);
+                document.getElementById("total19").value = total19;
+                document.getElementById("mark9").value = total19;
+                
+                if (total11 >= 70 && total11 <= 100){
+                    document.getElementById("grade1").value = "A";
+                }
+                else if (total11 >= 60 && total11 <= 69){
+                    document.getElementById("grade1").value = "B";
+                }
+                else if (total11 >= 50 && total11 <= 59){
+                    document.getElementById("grade1").value = "C";
+                }
+                else if (total11 >= 45 && total11 <= 49){
+                    document.getElementById("grade1").value = "D";
+                }
+                else if (total11 >= 40 && total11 <= 44){
+                    document.getElementById("grade1").value = "E";
+                }
+                else {
+                    document.getElementById("grade1").value = "F";
+                }
+
+                if (total12 >= 70 && total12 <= 100){
+                    document.getElementById("grade2").value = "A";
+                }
+                else if (total12 >= 60 && total12 <= 69){
+                    document.getElementById("grade2").value = "B";
+                }
+                else if (total12 >= 50 && total12 <= 59){
+                    document.getElementById("grade2").value = "C";
+                }
+                else if (total12 >= 45 && total12 <= 49){
+                    document.getElementById("grade2").value = "D";
+                }
+                else if (total12 >= 40 && total12 <= 44){
+                    document.getElementById("grade2").value = "E";
+                }
+                else {
+                    document.getElementById("grade2").value = "F";
+                }
+
+                if (total13 >= 70 && total13 <= 100){
+                    document.getElementById("grade3").value = "A";
+                }
+                else if (total13 >= 60 && total13 <= 69){
+                    document.getElementById("grade3").value = "B";
+                }
+                else if (total13 >= 50 && total13 <= 59){
+                    document.getElementById("grade3").value = "C";
+                }
+                else if (total13 >= 45 && total13 <= 49){
+                    document.getElementById("grade3").value = "D";
+                }
+                else if (total13 >= 40 && total13 <= 44){
+                    document.getElementById("grade3").value = "E";
+                }
+                else {
+                    document.getElementById("grade3").value = "F";
+                }
+
+                if (total14 >= 70 && total14 <= 100){
+                    document.getElementById("grade4").value = "A";
+                }
+                else if (total14 >= 60 && total14 <= 69){
+                    document.getElementById("grade4").value = "B";
+                }
+                else if (total14 >= 50 && total14 <= 59){
+                    document.getElementById("grade4").value = "C";
+                }
+                else if (total14 >= 45 && total14 <= 49){
+                    document.getElementById("grade4").value = "D";
+                }
+                else if (total14 >= 40 && total14 <= 44){
+                    document.getElementById("grade4").value = "E";
+                }
+                else {
+                    document.getElementById("grade4").value = "F";
+                }
+
+                if (total15 >= 70 && total15 <= 100){
+                    document.getElementById("grade5").value = "A";
+                }
+                else if (total15 >= 60 && total15 <= 69){
+                    document.getElementById("grade5").value = "B";
+                }
+                else if (total15 >= 50 && total15 <= 59){
+                    document.getElementById("grade5").value = "C";
+                }
+                else if (total15 >= 45 && total15 <= 49){
+                    document.getElementById("grade5").value = "D";
+                }
+                else if (total15 >= 40 && total15 <= 44){
+                    document.getElementById("grade5").value = "E";
+                }
+                else {
+                    document.getElementById("grade5").value = "F";
+                }
+
+                if (total16 >= 70 && total16 <= 100){
+                    document.getElementById("grade6").value = "A";
+                }
+                else if (total16 >= 60 && total16 <= 69){
+                    document.getElementById("grade6").value = "B";
+                }
+                else if (total16 >= 50 && total16 <= 59){
+                    document.getElementById("grade6").value = "C";
+                }
+                else if (total16 >= 45 && total16 <= 49){
+                    document.getElementById("grade6").value = "D";
+                }
+                else if (total16 >= 40 && total16 <= 44){
+                    document.getElementById("grade6").value = "E";
+                }
+                else {
+                    document.getElementById("grade6").value = "F";
+                }
+
+                if (total17 >= 70 && total17 <= 100){
+                    document.getElementById("grade7").value = "A";
+                }
+                else if (total17 >= 60 && total17 <= 69){
+                    document.getElementById("grade7").value = "B";
+                }
+                else if (total17 >= 50 && total17 <= 59){
+                    document.getElementById("grade7").value = "C";
+                }
+                else if (total17 >= 45 && total17 <= 49){
+                    document.getElementById("grade7").value = "D";
+                }
+                else if (total17 >= 40 && total17 <= 44){
+                    document.getElementById("grade7").value = "E";
+                }
+                else {
+                    document.getElementById("grade7").value = "F";
+                }
+
+                if (total18 >= 70 && total18 <= 100){
+                    document.getElementById("grade8").value = "A";
+                }
+                else if (total18 >= 60 && total18 <= 69){
+                    document.getElementById("grade8").value = "B";
+                }
+                else if (total18 >= 50 && total18 <= 59){
+                    document.getElementById("grade8").value = "C";
+                }
+                else if (total18 >= 45 && total18 <= 49){
+                    document.getElementById("grade8").value = "D";
+                }
+                else if (total18 >= 40 && total18 <= 44){
+                    document.getElementById("grade8").value = "E";
+                }
+                else {
+                    document.getElementById("grade8").value = "F";
+                }
+
+                if (total19 >= 70 && total19 <= 100){
+                    document.getElementById("grade9").value = "A";
+                }
+                else if (total19 >= 60 && total19 <= 69){
+                    document.getElementById("grade9").value = "B";
+                }
+                else if (total19 >= 50 && total19 <= 59){
+                    document.getElementById("grade9").value = "C";
+                }
+                else if (total19 >= 45 && total19 <= 49){
+                    document.getElementById("grade9").value = "D";
+                }
+                else if (total19 >= 40 && total19 <= 44){
+                    document.getElementById("grade9").value = "E";
+                }
+                else {
+                    document.getElementById("grade9").value = "F";
+                }
+
+// 1
+                if (total11 >= 70 && total11 <= 100){
+                    document.getElementById("remark1").value = "Excellent";
+                }
+                else if (total11 >= 60 && total11 <= 69){
+                    document.getElementById("remark1").value = "Very Good";
+                }
+                else if (total11 >= 50 && total11 <= 59){
+                    document.getElementById("remark1").value = "Good";
+                }
+                else if (total11 >= 45 && total11 <= 49){
+                    document.getElementById("remark1").value = "Fair";
+                }
+                else if (total11 >= 40 && total11 <= 44){
+                    document.getElementById("remark1").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark1").value = "Failed";
+                }
+// 2
+                if (total12 >= 70 && total12 <= 100){
+                    document.getElementById("remark2").value = "Excellent";
+                }
+                else if (total12 >= 60 && total11 <= 69){
+                    document.getElementById("remark2").value = "Very Good";
+                }
+                else if (total12 >= 50 && total12 <= 59){
+                    document.getElementById("remark2").value = "Good";
+                }
+                else if (total12 >= 45 && total12 <= 49){
+                    document.getElementById("remark2").value = "Fair";
+                }
+                else if (total12 >= 40 && total12 <= 44){
+                    document.getElementById("remark2").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark2").value = "Failed";
+                }
+// 3
+                if (total13 >= 70 && total13 <= 100){
+                    document.getElementById("remark3").value = "Excellent";
+                }
+                else if (total13 >= 60 && total13 <= 69){
+                    document.getElementById("remark3").value = "Very Good";
+                }
+                else if (total13 >= 50 && total13 <= 59){
+                    document.getElementById("remark3").value = "Good";
+                }
+                else if (total13 >= 45 && total13 <= 49){
+                    document.getElementById("remark3").value = "Fair";
+                }
+                else if (total13 >= 40 && total13 <= 44){
+                    document.getElementById("remark3").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark3").value = "Failed";
+                }
+// 4
+                if (total14 >= 70 && total14 <= 100){
+                    document.getElementById("remark4").value = "Excellent";
+                }
+                else if (total14 >= 60 && total14 <= 69){
+                    document.getElementById("remark4").value = "Very Good";
+                }
+                else if (total14 >= 50 && total14 <= 59){
+                    document.getElementById("remark4").value = "Good";
+                }
+                else if (total14 >= 45 && total14 <= 49){
+                    document.getElementById("remark4").value = "Fair";
+                }
+                else if (total14 >= 40 && total14 <= 44){
+                    document.getElementById("remark4").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark4").value = "Failed";
+                }
+// 5
+                if (total15 >= 70 && total15 <= 100){
+                    document.getElementById("remark5").value = "Excellent";
+                }
+                else if (total15 >= 60 && total15 <= 69){
+                    document.getElementById("remark5").value = "Very Good";
+                }
+                else if (total15 >= 50 && total15 <= 59){
+                    document.getElementById("remark5").value = "Good";
+                }
+                else if (total15 >= 45 && total15 <= 49){
+                    document.getElementById("remark5").value = "Fair";
+                }
+                else if (total15 >= 40 && total15 <= 44){
+                    document.getElementById("remark5").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark5").value = "Failed";
+                }
+// 6
+                if (total16 >= 70 && total16 <= 100){
+                    document.getElementById("remark6").value = "Excellent";
+                }
+                else if (total16 >= 60 && total16 <= 69){
+                    document.getElementById("remark6").value = "Very Good";
+                }
+                else if (total16 >= 50 && total16 <= 59){
+                    document.getElementById("remark6").value = "Good";
+                }
+                else if (total16 >= 45 && total16 <= 49){
+                    document.getElementById("remark6").value = "Fair";
+                }
+                else if (total16 >= 40 && total16 <= 44){
+                    document.getElementById("remark6").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark6").value = "Failed";
+                }
+// 7
+                if (total17 >= 70 && total17 <= 100){
+                    document.getElementById("remark7").value = "Excellent";
+                }
+                else if (total17 >= 60 && total17 <= 69){
+                    document.getElementById("remark7").value = "Very Good";
+                }
+                else if (total17 >= 50 && total17 <= 59){
+                    document.getElementById("remark7").value = "Good";
+                }
+                else if (total17 >= 45 && total17 <= 49){
+                    document.getElementById("remark7").value = "Fair";
+                }
+                else if (total17 >= 40 && total17 <= 44){
+                    document.getElementById("remark7").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark7").value = "Failed";
+                }
+// 8
+                if (total18 >= 70 && total18 <= 100){
+                    document.getElementById("remark8").value = "Excellent";
+                }
+                else if (total18 >= 60 && total18 <= 69){
+                    document.getElementById("remark8").value = "Very Good";
+                }
+                else if (total18 >= 50 && total18 <= 59){
+                    document.getElementById("remark8").value = "Good";
+                }
+                else if (total18 >= 45 && total18 <= 49){
+                    document.getElementById("remark8").value = "Fair";
+                }
+                else if (total18 >= 40 && total18 <= 44){
+                    document.getElementById("remark8").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark8").value = "Failed";
+                }
+// 9
+                if (total19 >= 70 && total19 <= 100){
+                    document.getElementById("remark9").value = "Excellent";
+                }
+                else if (total19 >= 60 && total19 <= 69){
+                    document.getElementById("remark9").value = "Very Good";
+                }
+                else if (total19 >= 50 && total19 <= 59){
+                    document.getElementById("remark9").value = "Good";
+                }
+                else if (total19 >= 45 && total19 <= 49){
+                    document.getElementById("remark9").value = "Fair";
+                }
+                else if (total19 >= 40 && total19 <= 44){
+                    document.getElementById("remark9").value = "Poor";
+                }
+                else {
+                    document.getElementById("remark9").value = "Failed";
+                }
+            }
+            function printSpecificArea() {
+            const printContents = document.getElementById('printableArea').innerHTML;
+            const originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+            window.location.reload(); // Reload to restore event listeners
+        }
+    </script>    
+</body>
+</html>

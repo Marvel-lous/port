@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post" id="forms">
+        <label>Fullname</label>             
+        <input type="text" class="inputs" name="fullname" id="fullname" placeholder="Enter Fullname">
+        <br><br>
+        <label for="">Phone Number</label>
+        <input type="text" class="inputs" name="phonenumber" id="phonenumber" placeholder="Enter Phonenumber">
+        <br><br>
+        <label for="">Principal</label>
+        <input type="number" class="inputs" name="principal" placeholder="Enter amount of loan" id="principal">
+        <br><br>
+        <label for="">Rate</label>
+        <select class="inputs" name="rate" id="rate">
+            <option value="">--select rate--</option>
+            <option value="0.05">5%</option>
+            <!-- <option value="0.10">10%</option>
+            <option value="0.25">25%</option>
+            <option value="0.50">50%</option>
+            <option value="0.55">55%</option>
+        </select><br><br> -->
+        <!-- <input type="number" class="inputs" name="rate" placeholder="Select rate" id="rate">
+        <br><br> -->
+        <label for="">Time till repayment</label>
+        <label for="">Rate</label>
+
+        <input type="number" class="inputs" name="time" placeholder="Select the duration of repayment(IN MONTHS)" id="time">
+        <br><br>
+        <input type="button" value="Calculate" onclick="loan()">
+        <br><br>
+        <label for="">Interest</label>
+        <input type="text" class="inputs" readonly placeholder="This is your interest" id="interest">
+        <br><br>
+        <label for="">Monthly Payment</label>
+        <input type="text" class="inputs" readonly placeholder="This is the amount to be paid monthly" id="amount">
+        <br><br>
+        <label for="">Total Payback</label>
+        <input type="text" class="inputs" readonly placeholder="This is your total payback" id="total">
+        <br><br>
+        <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+
+    <script type="text/javascript">
+        function loan() {
+            let principal = Number(document.getElementById("principal").value);
+            let rate = Number(document.getElementById("rate").value);
+            let time = Number(document.getElementById("time").value);
+
+            if (isNaN(principal) || isNaN(rate) || isNaN(time)) {
+                return false;
+            }
+
+            let interest = principal * rate;
+            document.getElementById("interest").value = interest.toFixed(2);
+
+            let total = principal + interest;
+            document.getElementById("total").value = total.toFixed(2);
+
+            let amount = total / time;
+            document.getElementById("amount").value = amount.toFixed(2);
+        }
+
+        function submitForm() {
+            let fullname = document.getElementById("fullname").value;
+            let phonenumber = document.getElementById("phonenumber").value;
+            let principal = document.getElementById("principal").value;
+            let rate = document.getElementById("rate").value;
+            let time = document.getElementById("time").value;
+            let interest = document.getElementById("interest").value;
+            let amount = document.getElementById("amount").value;
+            let total = document.getElementById("total").value;
+
+            // alert(`Hello ${fullname}, your loan details are:
+            // Principal: ${principal}
+            // Rate: ${rate}%
+            // Time: ${time} months
+            // Interest: ${interest}
+            // Monthly Payment: ${amount}
+            // Total Payback: ${total}`);
+            alert("Dear " + fullname + ", your loan details are as follows:\nPrincipal: ₦" + principal + "\nRate: " + rate + "%\nTime for repayment: " + time + " month(s)\nInterest: ₦" + interest + "\nMonthly payment: ₦" + amount + "\nTotal payback: ₦" + total);
+        }
+    </script>
+</body>
+</html>
